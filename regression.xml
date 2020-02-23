@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Adhocofupdated">
+
+
+<listeners>
+
+<listener class-name="com.facebook.App"/>
+
+</listeners>
+
+
+<test name="Rgression">
+
+<parameter name="url" value="https://facebook.com"/>
+
+<parameter name="browser" value="chrome"/>
+
+
+<classes>
+
+<!-- to use two dementional array use this class -->
+<class name="run.testData"/>
+
+<!--  class name="run.Home_Site"/-->
+
+<!-- <class name="Run.Forgot_psswd"></class>-->
+
+<!-- <class name="Adhoc.ut"></class>-->
+
+
+</classes>
+
+</test>
+
+
+<test name="It">
+
+<parameter name="url" value="https://facebook.com"/>
+
+<parameter name="browser" value="firefox"/>
+
+
+<classes>
+
+<!-- to use two dementional array use this class -->
+ <class name="run.testData"/>
+ 
+<!-- <class name="Run.Home_Site"></class>-->
+<!-- class name="run.Forgot_psswd"/> -->
+<!-- <class name="Adhoc.ut"></class>-->
+
+
+</classes>
+
+</test>
+
+</suite>
